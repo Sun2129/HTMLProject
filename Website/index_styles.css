@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* Body */
+body{
+	background-color: black;
+}
+
+/* Navigation Bar Code */
+nav{
+	width: 100%;
+	height: 9%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background-color: white;
+	z-index: 1;
+	position: fixed;
+	opacity: 1;
+	transition: opacity 0.2s ease-in-out;
+}
+
+nav p1{
+	font-size: 22px;
+	color: black;
+	line-height: 55px;
+	float: left;
+	padding: 0px 20px;
+}
+
+nav ul{
+	float: left;
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li a{
+	display: block;
+	font-size: 17px;
+	color: black;
+	padding: 18px 14px;
+	text-decoration: none;
+}
+
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding: 10px;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+nav ul li ul li{
+	width: 100px;
+}
+
+nav ul li ul li a{
+	padding: 8px 14px;
+}
+
+nav ul li ul li a:hover{
+	background-color: #f3f3f3;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	color: black;
+	z-index: 1;
+	opacity: 1;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.footer p1{
+	font-size: 22px;
+	padding: 0px 20px;
+	line-height: 55px;
+}
+
+/* Slide Show Code */
+.intro{
+	height: 100vh;
+	position: relative;
+}
+
+.slideshow-img{
+	position: absolute;
+	top: 9%;
+	left: 0;
+	width: 100%;
+	height: 91%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
